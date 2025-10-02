@@ -1,0 +1,90 @@
+{
+  "defaults": { "prefer_when_both": "left" },
+
+  "rules": [
+    {
+      "name": "C14",
+      "panels": ["C"],
+      "gauges": [14],
+      "crimp_id": "018769-025",
+
+      "tokens_left":  ["PSS1", "PSS3", "AMA", "WMA", "FMA", "VMA", "86", "SY", "(?:VMSS|AMSS)A", "(?:VMSS|AMSS)B", "[A-Z0-9]*CBCS(?:A)?",
+      "PSS2", "PSS4", "AMB", "WMB", "FMB", "VMB", "AM", "WM", "VM", "FM","SYA", "SYB"],
+
+      "tokens_right": ["PSS2", "PSS4", "AMB", "WMB", "FMB", "VMB", "86", "SY", "(?:VMSS|AMSS)A", "(?:VMSS|AMSS)B", "[A-Z0-9]*CBCS(?:B)?",
+      "PSS1", "PSS3", "AMA", "WMA", "FMA", "VMA", "AM", "WM", "VM", "FM","SYA", "SYB"],
+
+      "columns": { "left": 15, "right": 19 }
+    },
+
+    {
+      "name": "A14",
+      "panels": ["A"],
+      "gauges": [14],
+      "crimp_id": "018769-025",
+
+      "tokens_left":  ["CPT\\d+", "SUM\\d[A-Z]?", "SUM\\d+",  "STBA_CT", "STBB_CT", "TA\\d[A-Z]?"],
+      "tokens_right": ["CPT\\d+", "SUM\\d[A-Z]?", "SUM\\d+",  "STBA_CT", "STBB_CT", "TA\\d[A-Z]?"],
+
+      "columns": { "left": 15, "right": 19 }
+    },
+
+    {
+      "name": "A12",
+      "panels": ["A"],
+      "gauges": [12],
+      "crimp_id": "",
+
+      "tokens_left":  [],
+      "tokens_right": [],
+
+      "columns": { "left": 15, "right": 19 }
+    },
+
+  {
+  "name": "A18",
+  "panels": ["A"],
+  "gauges": [18],
+  "crimp_id": "018769-127",
+
+  "tokens_left": ["PGMR\\d+", "CVFR\\d*_[A-Z]", "PGLB_ERMS", "T_ERMS", "D27", "LBMR", "PGTR", "PGCL","TTRR", "TCLR", 
+  "AUTOM", "ESCR", "ASR", "LDAR", "APRR", "LBDR" ,"CFU\\d.", "SPR", "BOUV", "BUOF", "HCSDR\\d*_[A-Z]", "PCFR\\d*_[A-Z]",
+  "EAUTO_[A-Z]", "DALM_[A_Z]", "SMR_[A-Z]", "LOR_[A-B]", "ETOFF_[A-Z]", "CBCR_G[A-Z]", "CBTR_G[A_Z]", "SPR\\d+_[A-Z]"],
+  "disabled_tokens_right": ["PGMR\\d+", "CVFR\\d+", "PGLB_ERMS", "T_ERMS", "D27", "LBMR", "PGTR", "PGCL","TTRR", "TCLR", 
+  "AUTOM", "ESCR", "ASR", "LDAR"],
+
+  "columns": { "left": 15, "right": 19 }
+  
+},
+
+{
+  "name": "C18",
+  "panels": ["C"],
+  "gauges": [18],
+  "crimp_id": "018769-127",
+
+  "tokens_left": ["ECS","SMS","MSS\\d+","MPB\\d+","PB","SPEEDSW","VOLTAGESW"],
+  "disabled_tokens_right": ["ECS","SMS","MSS\\d+","MPB\\d+","PB","SPEEDSW","VOLTAGESW"],
+
+  "columns": { "left": 15, "right": 19 },
+  "prefer_when_both": "left"
+  
+},
+
+
+
+    {
+      "name": "null14",
+      "panels": ["null"],
+      "gauges": [14],
+      "crimp_id": "018769-025",
+
+      "tokens_left":  ["TA_GA","CPT_GA","TA_GB","CPT_GB"],
+      "tokens_right": ["TA_GA","CPT_GA","TA_GB","CPT_GB"],
+
+      "columns": { "left": 15, "right": 19 }
+    }
+
+
+  ]
+}

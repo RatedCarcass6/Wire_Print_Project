@@ -1,0 +1,45 @@
+Using the terminal powershell either in the folder with the files and program, or in VScode -
+
+
+Check if python is already in PATH on Powershell try:
+
+python --version
+
+or
+
+py --version
+
+
+If one of those works, you can run your script like this:       
+
+python .\fix_sheet.py `
+  --in ".\s1MpA.xml" `
+  --outdir ".\out" `
+  --header-anchor "Order ID" `
+  --max-per-file 199
+
+
+Otherwise 
+Use the path to where you installed Python and run this in Powershell 
+
+"Example path"
+"C:\Users\sesa833709\AppData\Local\Programs\Python\Python313\python.exe" .\fix_sheet.py `
+>>   --in ".\s1MpA.xml" `
+>>   --outdir ".\out" `
+>>   --header-anchor "Order ID" `
+>>   --max-per-file 199
+
+
+
+How to create the main
+
+python .\build_main_from_wires.py `
+  --template "C:\Users\sesa833709\OneDrive - Schneider Electric\Desktop\Wire Print Project\s12PGLBpA_main.xml" `
+  --wires-dir "C:\Users\sesa833709\OneDrive - Schneider Electric\Desktop\Wire Print Project\out" `
+  --outdir "C:\Users\sesa833709\OneDrive - Schneider Electric\Desktop\Wire Print Project\mains" `
+  --header-anchor "Order ID"
+
+
+Alternatively apply the Macros in excel.
+
+In order to potentially fix the saving issue download pywin32 then in your terminal:  pip install "C:\Users\sesa833709\Downloads\pywin32-311-cp314-cp314-win_amd64.whl"  (Replace with your path to pywin)

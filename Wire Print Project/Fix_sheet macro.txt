@@ -1,0 +1,144 @@
+Option Explicit
+
+' --- Utility to quote safely ---
+Private Function Q(s As String) As String
+    Q = """" & s & """"
+End Function
+
+' --- Try hard-coded path first (if you want), else discover Python robustly ---
+Private Function FindPython(Optional preferredPath As String = "") As String
+    On Error Resume Next
+    Dim fso As Object: Set fso = CreateObject("Scripting.FileSystemObject")
+
+    ' 1) If a preferred path was supplied and exists, use it
+    If Len(preferredPath) > 0 Then
+        If fso.FileExists(preferredPath) Then
+            FindPython = preferredPath
+            Exit Function
+        End If
+    End If
+
+    ' 2) Local venv next to workbook: .\venv\Scripts\python.exe
+    Dim venvPy As String
+    venvPy = ThisWorkbook.Path & "\venv\Scripts\python.exe"
+    If fso.FileExists(venvPy) Then
+        FindPython = venvPy
+        Exit Function
+    End If
+
+    ' 3) Use the Python launcher (py) to ask Python for its own executable
+    '    This works even if Python lives in an unusual folder.
+    Dim sh As Object: Set sh = CreateObject("WScript.Shell")
+    Dim execObj As Object, outText As String
+
+    On Error GoTo skipPyLauncher
+    Set execObj = sh.Exec("cmd.exe /S /C py -3 -c ""import sys;print(sys.executable)""")
+    Do While execObj.Status = 0
+        DoEvents
+    Loop
+    outText = Trim(execObj.StdOut.ReadAll)
+    If fso.FileExists(outText) Then
+        FindPython = outText
+        Exit Function
+    End If
+skipPyLauncher:
+
+    ' 4) Fall back to first python.exe on PATH
+    On Error GoTo skipWhere
+    Set execObj = sh.Exec("cmd.exe /S /C where python")
+    Do While execObj.Status = 0
+        DoEvents
+    Loop
+    outText = Trim(execObj.StdOut.ReadAll)
+    If InStr(1, outText, vbCrLf) > 0 Then outText = Split(outText, vbCrLf)(0)
+    If fso.FileExists(outText) Then
+        FindPython = outText
+        Exit Function
+    End If
+skipWhere:
+
+    FindPython = "" ' not found
+End Function
+
+Public Sub RunFixSheetScript()
+    On Error GoTo HandleErr
+
+    ' OPTIONAL: preferred Python path (macro will still auto-discover if missing)
+    Dim preferred As String
+    preferred = "C:\Users\sesa833709\AppData\Local\Programs\Python\Python313\python.exe"
+
+    Dim pythonExe As String
+    pythonExe = FindPython(preferred)
+    If Len(pythonExe) = 0 Then
+        MsgBox "Couldn't locate Python. Try one of these:" & vbCrLf & _
+               "1) Install Python with the 'py launcher' option." & vbCrLf & _
+               "2) Create a venv next to the workbook at .\venv\Scripts\python.exe" & vbCrLf & _
+               "3) Provide an exact python.exe path to hard-code.", vbCritical
+        Exit Sub
+    End If
+
+    ' Script lives next to the add-in/workbook
+    Dim scriptPath As String
+    scriptPath = ThisWorkbook.Path & "\fix_sheet.py"
+
+    ' === Pick MULTIPLE input files ===
+    Dim files As Variant
+    files = Application.GetOpenFilename( _
+                FileFilter:="XML Files (*.xml),*.xml,All Files (*.*),*.*", _
+                Title:="Pick input file(s)", _
+                MultiSelect:=True)
+    If VarType(files) = vbBoolean Then Exit Sub ' user cancelled
+
+    ' Build one --in argument followed by all files
+    Dim inArgs As String, i As Long
+    inArgs = " --in"
+    For i = LBound(files) To UBound(files)
+        inArgs = inArgs & " " & Q(CStr(files(i)))
+    Next i
+
+    ' === Output folder ===
+    Dim outDir As String
+    With Application.FileDialog(msoFileDialogFolderPicker)
+        .Title = "Pick output folder"
+        If .Show = -1 Then
+            outDir = .SelectedItems(1)
+        Else
+            outDir = ThisWorkbook.Path & "\output"
+        End If
+    End With
+
+    ' Validate paths
+    Dim fso As Object: Set fso = CreateObject("Scripting.FileSystemObject")
+    If Not fso.FileExists(scriptPath) Then
+        MsgBox "Script not found at:" & vbCrLf & scriptPath, vbCritical
+        Exit Sub
+    End If
+    If Not fso.FolderExists(outDir) Then fso.CreateFolder outDir
+
+    ' Build command (force UTF-8; capture log)
+    Dim inner As String, logPath As String, cmd As String
+    logPath = Environ$("TEMP") & "\fix_sheet_last_run.log"
+
+    inner = Q(pythonExe) & " -X utf8 " & Q(scriptPath) & _
+            inArgs & _
+            " --outdir " & Q(outDir)
+
+    cmd = "cmd.exe /S /C " & Q(inner & " > " & Q(logPath) & " 2>&1")
+
+    ' Run hidden & wait
+    Dim sh As Object: Set sh = CreateObject("WScript.Shell")
+    Dim exitCode As Long
+    exitCode = sh.Run(cmd, 0, True)
+
+    If exitCode = 0 Then
+        MsgBox "Done! Output: " & outDir, vbInformation
+    Else
+        MsgBox "Script exited with code " & exitCode & "." & vbCrLf & _
+               "See log: " & logPath, vbExclamation
+    End If
+    Exit Sub
+
+HandleErr:
+    MsgBox "Error: " & Err.Description, vbCritical
+End Sub
+

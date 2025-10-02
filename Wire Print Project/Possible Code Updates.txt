@@ -1,0 +1,21 @@
+
+This could go in build_main in compose article ID if you wanted to include PLCIO in the name
+
+def compose_article_id(article_group: str, fallback_wirefile_stem: str) -> str:
+    """
+    Column 5 'Article ID' (operator label).
+    Default: equal to Article Group; if empty, fall back to file name stem.
+    If 'PLCIO' is present in the stem, append '_PLCIO' to the Article ID (unless already present).
+    """
+    ag = normalize_cell(article_group)
+    article_id = ag if ag else normalize_cell(fallback_wirefile_stem)
+    if "plcio" in fallback_wirefile_stem.lower() and "_PLCIO" not in article_id.upper():
+        article_id += "_PLCIO"
+    return article_id
+
+
+
+
+
+Seperate files like I did for PLCIO but now also for plug/jack termination points. While still maintaining 
+priority for PLCIO seperation

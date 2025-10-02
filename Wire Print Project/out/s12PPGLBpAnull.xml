@@ -1,0 +1,522 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>PCS Engineering</Author>
+  <LastAuthor>Salvador Macias</LastAuthor>
+  <Created>2006-01-10T08:25:19Z</Created>
+  <LastSaved>2025-09-12T18:01:59Z</LastSaved>
+  <Company>Schleuniger Automation GmbH</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8820</WindowHeight>
+  <WindowWidth>17064</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#FFCC99" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+   <Interior ss:Color="#00B050" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#00B050" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+   <Interior ss:Color="#00B0F0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#00B0F0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+   <Interior ss:Color="#8EA9DB" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#8EA9DB" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s75">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s79">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+   <Interior ss:Color="#C65911" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s81">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#C65911" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:Rotate="90"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#FF6600" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s83">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:Rotate="90"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Color="#FFFFFF"
+    ss:Bold="1"/>
+   <Interior ss:Color="#FF6600" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="OrderTable">
+  <Names>
+   <NamedRange ss:Name="_FilterDatabase" ss:RefersTo="=OrderTable!R6C1:R6C23"
+    ss:Hidden="1"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="26" ss:ExpandedRowCount="14" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultColumnWidth="66"
+   ss:DefaultRowHeight="14.25">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="76.8"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="44.400000000000006"
+    ss:Span="1"/>
+   <Column ss:Index="4" ss:StyleID="s62" ss:Width="121.2" ss:Span="1"/>
+   <Column ss:Index="6" ss:StyleID="s62" ss:Width="114.6"/>
+   <Column ss:StyleID="s62" ss:Width="51.6"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="30.599999999999998"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="60"/>
+   <Column ss:StyleID="s62" ss:Width="75.600000000000009"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="33.6" ss:Span="1"/>
+   <Column ss:Index="13" ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="49.8"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="33.6" ss:Span="2"/>
+   <Column ss:Index="17" ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="63"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="33.6"/>
+   <Column ss:StyleID="s62" ss:Width="40.799999999999997"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="33.6"/>
+   <Column ss:StyleID="s62" ss:Width="25.8" ss:Span="2"/>
+   <Column ss:Index="24" ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="33.6"
+    ss:Span="2"/>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s63" ss:Span="3"/>
+   <Row ss:Index="5" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s64"><Data ss:Type="String" x:Ticked="1">Order Info</Data></Cell>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">'Wire Info</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="String" x:Ticked="1">Side1 </Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="15" ss:StyleID="s75"><Data ss:Type="String" x:Ticked="1">Side2</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="19" ss:StyleID="s79"><Data ss:Type="String" x:Ticked="1">Printer</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="176.25" ss:StyleID="s82">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Order ID</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Pieces</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Pieces Batch</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Article Group</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Article ID</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Wirelist Link</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Wirelistitem ID</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">IsInch</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Wire Length</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Wire ID</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Wireend0 StrippingLength</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Wireend0 Pulloff Length</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Wireend0 Crimp ID</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Wireend1 StrippingLength</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Wireend1 Pulloff Length</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Wireend1 Crimp ID</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="19" ss:StyleID="s83"><Data ss:Type="String">Printer1 ID</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Printer1 Layout</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Printer1 Wire1 BeginText</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Printer1 Wire1 EndlessText</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Printer1 Wire1 EndText</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Printer1 Wire1 BeginDistance</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Printer1 Wire1 EndlessDistance</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Printer1 Wire1 EndDistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">20321P null</Data></Cell>
+    <Cell><Data ss:Type="String">20321P S12pA18</Data></Cell>
+    <Cell><Data ss:Type="String">s12PGLBpA18</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="19"><Data ss:Type="String" x:Ticked="1">AWG </Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">20321P null</Data></Cell>
+    <Cell><Data ss:Type="String">20321P S12pA14</Data></Cell>
+    <Cell><Data ss:Type="String">s12PGLBpA14</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="19"><Data ss:Type="String" x:Ticked="1">AWG </Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">20321P null</Data></Cell>
+    <Cell><Data ss:Type="String">20321P S12pA12</Data></Cell>
+    <Cell><Data ss:Type="String">s12PGLBpA12</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="19"><Data ss:Type="String" x:Ticked="1">AWG </Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">20321P null</Data></Cell>
+    <Cell><Data ss:Type="String">20321P S12pC18</Data></Cell>
+    <Cell><Data ss:Type="String">s12PGLBpC18</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="19"><Data ss:Type="String" x:Ticked="1">AWG </Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">20321P null</Data></Cell>
+    <Cell><Data ss:Type="String">20321P S12pC14</Data></Cell>
+    <Cell><Data ss:Type="String">s12PGLBpC14</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="19"><Data ss:Type="String" x:Ticked="1">AWG </Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">20321P null</Data></Cell>
+    <Cell><Data ss:Type="String">20321P S12null18</Data></Cell>
+    <Cell><Data ss:Type="String">s12PGLBpnull18</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="19"><Data ss:Type="String" x:Ticked="1">AWG </Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">20321P null</Data></Cell>
+    <Cell><Data ss:Type="String">20321P S12pnull14</Data></Cell>
+    <Cell><Data ss:Type="String">s12PGLBpnull14</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="19"><Data ss:Type="String" x:Ticked="1">AWG </Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">20321P null</Data></Cell>
+    <Cell><Data ss:Type="String">20321P S12null12GRN</Data></Cell>
+    <Cell><Data ss:Type="String">s12PGLBpnull12GRN</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell ss:Index="19"><Data ss:Type="String" x:Ticked="1">AWG </Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1">&#45;&#45;-</Data></Cell>
+    <Cell><Data ss:Type="String" x:Ticked="1"></Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0.79</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.4921259845"/>
+    <Footer x:Margin="0.4921259845"/>
+    <PageMargins x:Bottom="0.984251969" x:Left="0.78740157499999996"
+     x:Right="0.78740157499999996" x:Top="0.984251969"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>300</HorizontalResolution>
+    <VerticalResolution>300</VerticalResolution>
+   </Print>
+   <Zoom>85</Zoom>
+   <Selected/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>6</SplitHorizontal>
+   <TopRowBottomPane>6</TopRowBottomPane>
+   <SplitVertical>1</SplitVertical>
+   <LeftColumnRightPane>1</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveCol>4</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <Sorting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Sort>Article Group</Sort>
+  </Sorting>
+ </Worksheet>
+</Workbook>
